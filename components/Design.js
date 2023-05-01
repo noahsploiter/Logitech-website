@@ -4,12 +4,26 @@ import Image from "next/image";
 import image2 from "../public/7.jpg";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdArrowBackIos } from "react-icons/md";
+import { motion } from "framer-motion";
 
 function Design() {
   return (
     <div className="mt-[100px] flex flex-col justify-center items-center">
       <div className="flex space-x-[200px] pl-10">
-        <div>
+        <motion.div
+          initial={{
+            x: -200,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 1.2,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-[#0b69b6] text-3xl mt-[100px] font-bold">
             BEAUTIFUL DESIGN
           </h1>
@@ -23,14 +37,28 @@ function Design() {
           <button className="mt-5 w-[150px] rounded-xl bg-[#0b69b6] h-[40px] text-white">
             Visit Now
           </button>
-        </div>
-        <div className="">
+        </motion.div>
+        <motion.div
+          initial={{
+            x: 200,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 1.2,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          viewport={{ once: true }}
+          className=""
+        >
           <Image
             className="w-[300px] hidden md:flex h-[200px] object-cover rounded-md"
             src={image}
             alt=""
           />
-        </div>
+        </motion.div>
       </div>
       <div className="flex space-x-[200px] mt-[100px]">
         <div>
