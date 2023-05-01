@@ -8,9 +8,9 @@ import { MdArrowBackIos } from "react-icons/md";
 function Design() {
   return (
     <div className="mt-[100px] flex flex-col justify-center items-center">
-      <div className="flex space-x-[200px] ">
+      <div className="flex space-x-[200px] pl-10">
         <div>
-          <h1 className="text-[#0b69b6] text-3xl font-bold">
+          <h1 className="text-[#0b69b6] text-3xl mt-[100px] font-bold">
             BEAUTIFUL DESIGN
           </h1>
           <h1 className="w-[300px] font-bold pt-5 text-2xl">
@@ -24,9 +24,9 @@ function Design() {
             Visit Now
           </button>
         </div>
-        <div>
+        <div className="">
           <Image
-            className="w-[300px] h-[200px] object-cover rounded-md"
+            className="w-[300px] hidden md:flex h-[200px] object-cover rounded-md"
             src={image}
             alt=""
           />
@@ -35,7 +35,7 @@ function Design() {
       <div className="flex space-x-[200px] mt-[100px]">
         <div>
           <Image
-            className="w-[300px] object-cover h-[200px] rounded-md"
+            className="w-[300px] hidden md:flex object-cover h-[200px] rounded-md"
             src={image2}
             alt=""
           />

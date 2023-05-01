@@ -5,9 +5,9 @@ import image2 from "../public/5.jpg";
 
 function Check() {
   return (
-    <div className="bg-[#0d0d0e] mt-[100px] w-screen h-[500px]">
+    <div className="bg-[#0d0d0e]  mt-[100px] w-screen md:h-[500px]">
       <div className="">
-        <div className="pt-10 flex justify-center space-x-10">
+        <div className="pt-10 md:flex-row flex flex-col items-center space-y-10 md:space-y-0  justify-center md:space-x-10">
           <div>
             <Image
               className="w-[300px] object-cover h-[200px] rounded-md"

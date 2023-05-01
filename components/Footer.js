@@ -6,7 +6,7 @@ import { IoMdArrowForward } from "react-icons/io";
 
 function Footer() {
   return (
-    <div className="flex justify-center space-x-[200px] bg-[#0d0d0e] text-white mt-[100px] pt-[50px] pb-5">
+    <div className="md:flex hidden justify-center space-x-[200px] bg-[#0d0d0e] text-white mt-[100px] pt-[50px] pb-5">
       <div className="space-y-5">
         <h1 className="text-3xl font-bold">Logitech</h1>
         <h3 className="w-[200px]">

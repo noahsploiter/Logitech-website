@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
@@ -9,7 +10,10 @@ function Header() {
         <h1>Logitech</h1>
       </div>
       <div className="space-x-5 hidden md:flex cursor-pointer">
-        <h1>Products</h1>
+        <Link href="#Product">
+          <button>Products</button>
+        </Link>
+
         <h1>WhyLogitech</h1>
         <h1>Pricing</h1>
         <h1>Accessoies</h1>
